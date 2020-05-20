@@ -39,7 +39,7 @@ The when downloading the ipipe patch and the linux kernel source tree, the versi
 ipipe-core-<version>-<architecture>-<irrelevant_number>.patch
 linux-<version>.tar.gz
 ```
-In other words, the <version> part of the files must be the same
+In other words, the `<version>` part of the files must be the same
 
 
 
