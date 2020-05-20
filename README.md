@@ -130,7 +130,7 @@ For example, you can type `/` then a search bar should popup. In the search bar,
 
 `Type`: The possible values the configuration option can take can take. Boolean can either be [=y] or [=n]. Tristate can be [=y], [=n], or [=m] 
 
-`Prompt`: gives information about the configuration option
+`Prompt`: gives information about the configuration option. This is also the "menu name" of the configuration option (how the option is displayed in the navigation menu)
 
 `Location`: tells you where in the configuration menu you can go to in order to enable or disable the feature
 
