@@ -3,13 +3,13 @@
 
 ## Download Xenomai
 
-### Method A: Dowlnoad the latest stable version of Xenomai and unzip it 
+Method A: Dowlnoad the latest stable version of Xenomai and unzip it 
 ```
 wget https://gitlab.denx.de/Xenomai/xenomai/-/archive/stable/v3.0.x/xenomai-stable-v3.0.x.tar.gz
 tar -xz 
 ```
 
-### Method B: 
+Method B: 
 
 Go to the xenomai website and manually download it
 ```
