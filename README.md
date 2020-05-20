@@ -127,12 +127,19 @@ Note than you can pres the arrow buttons to movearound if the search results are
 For example, you can type `/` then a search bar should popup. In the search bar, type in "USB" and it will return search results on configuration options that are related to "USB". The reults should be kernel configuration options with the following information:
 
 `Symbol`: The variable name that the configuration option goes by. This also lists the current setting of the configuration option in brackets (e.g. [=y] means that it is enabled, [=n] means disabled)
+
 `Type`: The possible values the configuration option can take can take. Boolean can either be [=y] or [=n]. Tristate can be [=y], [=n], or [=m] 
+
 `Prompt`: gives information about the configuration option
+
 `Location`: tells you where in the configuration menu you can go to in order to enable or disable the feature
+
 `Defined at`: tells you where in the kernel filesytem you can find the feature
+
 `Selects`: If this option is set to true (i.e. [=y]), then the opther options will be set to true
+
 `Selected by`: If other options are set to true, then this feature is automatically set to true
+
 `Depends on`: If other features are set to true, then this feature can be configured manually.
  
 Note the current state of the feature (whther it is enabled or disabled). Got to the respective location and enable it if not already enabled.
@@ -145,7 +152,6 @@ USB - Enabled [=y]
 CPU_FREQ - Disabled [=n]
 CPU_IDLE - Disable [=n]
 CC_STACKPROTECTOR - can either be Enabled [=y] or Disabled [=n]
-APM - Disabled [=n]
 ACPI_PROCESSOR - Disable
 INTEL_IDLE - Disable
 INPUT_PCSPKR - Disable
