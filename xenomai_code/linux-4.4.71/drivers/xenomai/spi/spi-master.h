@@ -1,1 +1,1 @@
-/home/roman/Documents/courses/cs263/RTOS4ROBOTS/xenomai_code/xenomai/kernel/drivers/spi/spi-master.h
+/home/roman/Documents/courses/cs263/RTOS4ROBOTS/xenomai_code/xenomai-stable-v3.0.x/kernel/drivers/spi/spi-master.h

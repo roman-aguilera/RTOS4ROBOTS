@@ -97,7 +97,15 @@ unzip it
 
 ```
 
+
+
 ## Building the Cobalt kernel
+
+move your patch inside the kernel directory
+```
+mv ipipe-core-4.4.71-x86-10.patch linux-4.4.71/
+```
+
 
 The directory path for you linux kernel source tree is `<linux-srctree>`. 
 For example, mine is `/home/roman/Documents/courses/cs263/RTOS4ROBOTS/xenomai_code/linux-4.14.89`.
@@ -126,6 +134,18 @@ cd /home/roman/Documents/courses/cs263/RTOS4ROBOTS/xenomai_code/linux-4.4.71
 /home/roman/Documents/courses/cs263/RTOS4ROBOTS/xenomai_code/xenomai/scripts/prepare-kernel.sh --linux=/home/roman/Documents/courses/cs263/RTOS4ROBOTS/xenomai_code/linux-4.4.71 --ipipe=/home/roman/Documents/courses/cs263/RTOS4ROBOTS/xenomai_code/ipipe-core-4.4.71-x86-10.patch --arch=x86_64
 ```
 
+```
+cd /home/roman/Documents/courses/cs263/RTOS4ROBOTS/xenomai_code/linux-4.4.71 
+
+/home/roman/Documents/courses/cs263/RTOS4ROBOTS/xenomai_code/xenomai-stable-v3.0.x/scripts/prepare-kernel.sh --linux=/home/roman/Documents/courses/cs263/RTOS4ROBOTS/xenomai_code/linux-4.4.71 --ipipe=/home/roman/Documents/courses/cs263/RTOS4ROBOTS/xenomai_code/linux-4.4.7/ipipe-core-4.4.71-x86-10.patch --arch=x86_64
+
+```
+
+```
+/home/roman/Documents/courses/cs263/RTOS4ROBOTS/xenomai_code/xenomai-stable-v3.0.x/scripts/prepare-kernel.sh --linux=/home/roman/Documents/courses/cs263/RTOS4ROBOTS/xenomai_code/linux-4.4.71 --ipipe=/home/roman/Documents/courses/cs263/RTOS4ROBOTS/xenomai_code/linux-4.4.71/ipipe-core-4.4.71-x86-10.patch --arch=x86_64
+```
+
+
 
 
 Install `gconfig`, `xconfig`, and `menuconfig` dependencies respectively:
@@ -141,8 +161,14 @@ From the same linux source directory `<linux-srctree>`, configure the kernel usi
 ```
 make menuconfig
 ```
+`gconfig` might be more intuituve. I switched back and forth to between `gconfig`'s (using the click-to-enable feature) and `menuconfig` (using the search feature).
 
-You should now be in a Kernel Configuration GUI window. You can disable and enable deisred kernel configuration options. The enabled kernel options dictate what modules to install with your linux kernel to enable certain functionalities. For example, if you want to be able to use USB 3.0 or 2.0 with your kernel, you can make sure that the resprctive configuration options `usb_xhci_hcd` and `usb_ehci_hcd` are enabled. Information about all the linux kernel configuration options can be found here https://cateee.net/lkddb/web-lkddb/ . As you navigate the menu, you can press `/` to bring up search results for information on a specific configuration option you want to find. 
+
+You should now be in a `menuconfig` Kernel Configuration window. 
+You can disable and enable deisred kernel configuration options. 
+The enabled kernel options dictate what modules to install with your linux kernel to enable certain functionalities. 
+For example, if you want to be able to use USB 3.0 or 2.0 with your kernel, you can make sure that the resprctive configuration options `usb_xhci_hcd` and `usb_ehci_hcd` are enabled. 
+Information about all the linux kernel configuration options can be found here https://cateee.net/lkddb/web-lkddb/ . As you navigate the kernel configuration menu, you can press `/` to bring up search results for information on a specific configuration option you want to find. 
 Note than you can pres the arrow buttons to movearound if the search results are cut off.
 
 For example, you can type `/` then a search bar should popup. In the search bar, type in "USB" and it will return search results on configuration options that are related to "USB". The reults should be kernel configuration options with the following information:
@@ -166,27 +192,81 @@ For example, you can type `/` then a search bar should popup. In the search bar,
 Note the current state of the feature (whther it is enabled or disabled). Got to the respective location and enable it if not already enabled.
 
 
-Esure the following features are set:
+Ensure the following features are set (with the key commands (`y`, `n`, or `m`) if using `menuconfig` or clicking appopriately if using `gconfig`:
 ```
-APM - Disabled [=n] . Already disabled by default, don't need to mess with this one
-CPU_FREQ - Disable manually [=n]
-INTEL_IDLE - Disable manually [=n] . This will also be automatically disabled when when CPU_IDLE is disabled
-ACPI_PROCESSOR - Disabled [=n]
-CPU_IDLE - Disable [=n]
-INPUT_PCSPKR - Disable manually [=n]
-CC_STACKPROTECTOR - can either be Enabled [=y] or Disabled [=n] for xenomai 3, I left it enabled as is
-PCI_MSI - Can be enabled [=y] or Disabled [=n]. I left it enabled as is. (if you want to Enable [=y], then the operatios hooking/requesting, releasing, enabling/unmasking, disabling/masking must all be done from the Linux mode and not real-time (not from Cobalt) mode. The requirement translates into calling rtdm_irq_request(), rtdm_irq_free(), rtdm_irq_enable(), rtdm_irq_disable() exclusively from a non-rt handler in any RTDM driver. This includes the →open(), →close() and →ioctl_nrt() handlers.)
+#General Setup features
+CONFIG_HIGH_RES_TIMERS[=y]  General Setup -> Timers subsystem -> High Resolution Timer Support (CONFIG_HIGH_RES_TIMERS[=y])
 
-USB_SUPPORT [=y] 
-USB [=y] - This is host side USB
-USB_xHCI_HCD [=y] - This is USB 3.0 host conroller support
-USB_XHCI_PLATFORM [=y]
-USB_EHCI_HCD [=y] - This is USB 2.0 host controller support 
-USB_EHCI_ROOT_HUB_TT [=y]
-USB_EHCI_TT_NEWSCHED [=y]
+# Power Management and ACPI Options
+APM - Disabled [=n] . Already disabled by default, don't need to mess with this one  -> Power management and ACPI options 
+CPU_FREQ - Disable manually [=n] -> Power management and ACPI options -> CPU Frequency scaling -> CPU Frequency scaling 
+INTEL_IDLE - Disable manually [=n] . This will also be automatically disabled when when CPU_IDLE is disabled (done at a later step) -> Power management and ACPI options -> CPU Idle -> CPU Idle Driver for Intel Processors
+ACPI_PROCESSOR - Disabled [=n] -> Power management and ACPI options -> ACPI (Advanced Configuration and Power Interface) Support -> Processor
+CPU_IDLE - Disable [=n] Power management and ACPI options -> CPU Idle -> CPU Idle PM Support 
+i7300_IDLE [=n] Should be slready disabled. -> Power management and ACPI options -> Memory power savings -> Intel chipset idle memory power saving driver (Disable)
+
+# Processsor type and features
+Pocessor type and features -> Processor family -> Core 2/newer Xeon (if \"cat /proc/cpuinfo | grep family\" returns 6, set as Generic otherwise)
+
+# Device Drivers
+INPUT_PCSPKR - Disable manually [=n]  -> Device Drivers  -> Input device support  -> Generic input layer (needed for keyboard, mouse, ...) (INPUT [=y])  -> Miscellaneous devices (INPUT_MISC[=y]) -> PC Speaker Support 
+CC_STACKPROTECTOR - can either be Enabled [=y] or Disabled [=n] for xenomai 3, I left it enabled as is. 
+
+# Bus options
+PCI_MSI - Can be enabled [=y] or Disabled [=n]. I left it enabled as is. (if you want to Enable [=y], then the operatios hooking/requesting, releasing, enabling/unmasking, disabling/masking must all be done from the Linux mode and not real-time (not from Cobalt) mode. The requirement translates into calling rtdm_irq_request(), rtdm_irq_free(), rtdm_irq_enable(), rtdm_irq_disable() exclusively from a non-rt handler in any RTDM driver. This includes the →open(), →close() and →ioctl_nrt() handlers.)  -> Bus options (PCI etc.) -> PCI support [=y] -> Message Signaled Interrupts (MSI and MSI-X) (PCI_MSI [= ])
+
+
+#USB options
+USB_SUPPORT [=y]   -> Device Drivers -> USB support (USB_SUPPORT[=y])
+USB [=y] - This is host side USB  -> Device Drivers  -> USB support (USB_SUPPORT [=y]) -> Support for Host-side USB (USB [=y])
+USB_xHCI_HCD [=y] - This is USB 3.0 host conroller support  -> Device Drivers  -> USB support (USB_SUPPORT [=y]) -> Support for Host-side USB (USB [=y]) -> xHCI HCD (USB 3.0) support (USB_xHCI_HCD [=y]) 
+USB_XHCI_PLATFORM [=y]  -> Device Drivers  -> USB support (USB_SUPPORT [=y])  -> Support for Host-side USB (USB [=y]) -> xHCI HCD (USB 3.0) support (USB_XHCI_HCD[=y]) -> Generic xHCI driver for a platform device (USB_XHCI_PLATFORM [=y])
+USB_EHCI_HCD [=y] - This is USB 2.0 host controller support -> Device Drivers -> USB support (USB_SUPPORT [=y]) -> Support for Host-side USB (USB [=y]) -> EHCI HCD (USB 2.0) support (USB_EHCI_HCD [=y]) ()
+USB_EHCI_ROOT_HUB_TT [=y]  -> Device Drivers -> USB support (USB_SUPPORT [=y])  -> Support for Host-side USB (USB [=y])  -> EHCI HCD (USB 2.0) support (USB_EHCI_HCD[=y]) -> Root Hub Transaction Translators (USB_EHCI_ROOT_HUB_TT [=y])
+USB_EHCI_TT_NEWSCHED [=y]   -> Device Drivers -> USB support (USB_SUPPORT [=y])  -> Support for Host-side USB (USB [=y])  -> EHCI HCD (USB 2.0) support (USB_EHCI_HCD[=y]) ->  Improved Transaction Translator scheduling (USB_EHCI_TT_NEWSCHED [=y])
+# you might have to enable other USB options in order to compile architecture-specific USB drivers (depending on your use case) into your kernel
+
+# real-time subsystem
+XENOMAI [=y] Xenomai/cobalt
+
+## considered the link https://rtt-lwr.readthedocs.io/en/latest/rtpc/xenomai.html , uses xenomai 2 , linux 2.18.20
+## considered https://stackoverflow.com/questions/41949678/installation-steps-for-xenomai-3-on-ubuntu-16-04, uses xenomai 3, linux 4.4.43
+## considered the link https://rtt-lwr.readthedocs.io/en/latest/rtpc/xenomai.html , uses xenomai 3 , linux 4.9.38
+XENO_DRIVERS_NET [=m] -> Xenomai/cobalt (XENOMAI [=y])  -> Drivers -> RTnet -> RTnet, TCP/IP socket interface (XENO_DRIVERS_NET [=y]) 
+
+## considered https://stackoverflow.com/questions/41949678/installation-steps-for-xenomai-3-on-ubuntu-16-04, uses xenomai 3, linux 4.4.43
+## possibly the same as --> Nucleus (Enable)--> Pervasive real-time support in user-space (Enable) from  https://rtt-lwr.readthedocs.io/en/latest/rtpc/xenomai.html , uses xenomai 2 , linux 2.18.20 , not holding too much weight
+XENO_DRIVERS_UDD [=y] -> Xenomai/cobalt (XENOMAI [=y]) -> Drivers -> UDD support -> User-space device driver framework XENO_DRIVERS_UDD [=y]
+
+## considered the link https://rtt-lwr.readthedocs.io/en/latest/rtpc/xenomai.html , uses xenomai 3 , linux 4.9.38
+Xenomai/cobalt --> Drivers --> RTnet --> RTnet, TCP/IP socket interface (Enable) --> Drivers --> New intel(R) PRO/1000 PCIe (Enable),  Realtek 8169 (Enable), Loopback (Enable, already came enabled when RTnet was enabled)
+Xenomai/cobalt --> Drivers --> RTnet --> Add-Ons --> Real-Time Capturing Support (Enable)
+
+#sizes and static limits
+# i considered the link https://rtt-lwr.readthedocs.io/en/latest/rtpc/xenomai3.html , they use xenomai 3 and linux 4.9.38
+Xenomai/Cobalt -> Sizes and Static Limits -> Number of Registry Slots (512 originally --> changed 4096 as susseged by xenomai-3.0.5 link)
+Xenomai/Cobalt -> Sizes and Static Limits -> Size of system heap (4096 originally (left alone),  same as suggested xenomai-3.0.5 link)
+Xenomai/Cobalt -> Sizes and Static Limits -> Size of private heap (256 originally  (left alone), same as suggested xenomai-3.0.5 link) 
+Xenomai/Cobalt -> Sizes and Static Limits -> Size of shared heap (256 originally (left alone), same as as suggested xenomai-3.0.5 link)
+Xenomai/Cobalt -> Sizes and Static Limits -> Maximum Number of POSIX timers per process -> (256 originally --> changed to 512 as suggested xenomai-3.0.5 link)
+
+# i considered the link https://rtt-lwr.readthedocs.io/en/latest/rtpc/xenomai3.html , they use xenomai 3 and linux 4.9.38
+MAX_SMP[=n] manually disable:  Pocessor type and features --> Enable maximum number of SMP processors and NUMA nodes (Disable)
+Pocessor type and features -> Processor family ->Core 2/newer Xeon (if "cat /proc/cpuinfo | grep family" returns 6, set as Generic otherwise)
+TRANSPARENT_HUGEPAGE [=n] manually disable: Pocessor type and features --> Transparent Hugepage Support (Disable)
+COMPACTION [=n] manually disable:  Pocessor type and features --> Allow for memory compaction (Disable)
+CMA [=n] manually disable : Pocessor type and features --> Contiguous Memory Allocation (Disable)
+MIGRATION [=n] manually disable (CMA has to be disabled first) : Pocessor type and features --> Allow for memory compaction --> Page Migration (Disable)
+
+
+###kernel wouldnt compile without disabling this
+UNISYSSPAR [=n]  -> Device Drivers -> Stagaging drivers (STAGING
 
 ```
-
+Build the Kernel (This might take a while. I started started compilation at 1:25. The compilation ended at 3:50. so about 2.5 hours):
+```
+make bzImage modules
+```
 
 
 
