@@ -3,7 +3,6 @@ This repository is part of a research project that aims to build end-to-end, har
 The emphasis here is HARD REAL-TIME (which significantly narrows down the posiible types of software options one can use). 
 This research project is done in an open-source manner because it allows others to freely and rapidly prototype mission-critical projects, such as agile humanoids (life size robots that can run on 2 legs).
 
-
 This README.md file includes step-by-step instructions for installing Xenomai 3. If you find this repository beneficial, we encourage you to cite it.
 
 So far, this status of this project is having a successfully compiled Xenomai3 dual (codename Cobalt) kernel built on top of Linux version 4.4.71 to be used on x86 target hardware. 
@@ -17,14 +16,26 @@ The goal of this is to collaborate and disseminate open-source solutions.
 
 # External Resources
 
+
 Here are a few links for other rescources:
 
+https://gitlab.denx.de/Xenomai/xenomai/-/wikis/Configuring_For_X86_Based_Dual_Kernels#Optimized_CPU_and_platform_settings
+
+https://index.ros.org/doc/ros2/Installation/
+
+https://design.ros2.org/articles/realtime_background.html
+
 https://wiki.rdu.im/_pages/Resource/software.html
+
 https://wiki.rdu.im/_pages/Resource/online-course.html
 
+
 Some other open-source, hard real-time operating systems that are popular:
+
 http://rtxi.org/docs/manual/
+
 https://www.rtai.org/
+
 
 Papers that have done this sort of work:
 
