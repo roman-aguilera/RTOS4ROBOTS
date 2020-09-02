@@ -1,5 +1,27 @@
 # RTOS4ROBOTS
+This repository is a compilation of rescources for learning how build end-to-end, hard real-time, control systems by integrating open source software tools. The emphasis here is HARD REAL-TIME (which significantly narrows down the posiible types of software options on can use). This file also includes step-by-step instructions for installing Xenomai 3. So far I have gotten to the point of compiling 
 
+Here are a few links for rescources
+https://wiki.rdu.im/_pages/Resource/software.html
+https://wiki.rdu.im/_pages/Resource/online-course.html
+
+Some other hard real-time operating systems:
+Open source
+http://rtxi.org/docs/manual/
+https://www.rtai.org/
+
+
+
+Papers that have done this sort of work:
+"Building XenoBuntuLinux Distribution for Teaching and Prototyping Real-Time Operating Systems" (uses Xenomai 2)
+https://arxiv.org/pdf/1103.2336.pdf
+"Laboratorio de Practicas para la Ensenanzade Sistemas de Control de Tiempo Real" ("Laboratory of Practices for the Teaching of Real Time Control Systems")
+https://core.ac.uk/download/pdf/41776734.pdf
+"Towards an Open-Source Integrated Development and Real-Time Control Platform for Robots"
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1078.5712&rep=rep1&type=pdf
+
+
+To get started with installing Xenomai on Ubuntu, follow these instuctions:
 
 ## Check which architeture your computer uses
 
