@@ -1,4 +1,4 @@
-# RTOS4ROBOTS
+# RTOS4ROBOTS : Hard Real-Time Operatings Systems
 This repository is part of a research project that aims to build end-to-end, hard real-time, control systems by integrating open source software tools. 
 The emphasis here is HARD REAL-TIME (which significantly narrows down the posiible types of software options one can use). 
 This research project is done in an open-source manner because it allows others to freely and rapidly prototype mission-critical projects, such as agile humanoids (life size robots that can run on 2 legs).
@@ -12,14 +12,14 @@ This was done using an x86-based laptop running on the Ubuntu 16.04 operating sy
 A current project is compiling a Xenomai3 kernel on Ubuntu 18.04 for target hardware that runs on arm-based target hardware.
 I am currently investigating which mix of proceccors/chips, hardware, microcontrollers, System-on-Chip, and open-source software tools is best suited for building an agile humanoid robot from the ground up. 
 If you have any comments, suggestions on hardware, or would like to collaborate, please reach out to me at romanaguilera94@gmail.com, Twitter, or LinkedIn .
+If you have a functional and up-to-date hard real-time operating system set up, please reach out so that we can cite your work and build on top of your existing setup. 
+The goal of this is to collaborate and disseminate open-source solutions.
 
-
-Here are a few links for rescources
+Here are a few links for other rescources:
 https://wiki.rdu.im/_pages/Resource/software.html
 https://wiki.rdu.im/_pages/Resource/online-course.html
 
-Some other hard real-time operating systems:
-Open source
+Some other open-source, hard real-time operating systems that are popular:
 http://rtxi.org/docs/manual/
 https://www.rtai.org/
 
