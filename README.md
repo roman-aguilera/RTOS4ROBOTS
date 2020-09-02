@@ -3,7 +3,9 @@ This repository is part of a research project that aims to build end-to-end, har
 The emphasis here is HARD REAL-TIME (which significantly narrows down the posiible types of software options one can use). 
 This research project is done in an open-source manner because it allows others to freely and rapidly prototype mission-critical projects, such as agile humanoids (life size robots that can run on 2 legs).
 
-This README.md file includes step-by-step instructions for installing Xenomai 3. If you find this repository beneficial, we encourage you to cite it.
+This README.md file includes step-by-step instructions for installing Xenomai 3. 
+https://gitlab.denx.de/Xenomai/xenomai/-/wikis/home
+If you find this repository beneficial, we encourage you to cite it.
 
 So far, this status of this project is having a successfully compiled Xenomai3 dual (codename Cobalt) kernel built on top of Linux version 4.4.71 to be used on x86 target hardware. 
 This was done using an x86-based laptop running on the Ubuntu 16.04 operating system.
