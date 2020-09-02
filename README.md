@@ -1,5 +1,5 @@
 # RTOS4ROBOTS
-This repository is part of a research project for learning how build end-to-end, hard real-time, control systems by integrating open source software tools. 
+This repository is part of a research project that aims to build end-to-end, hard real-time, control systems by integrating open source software tools. 
 The emphasis here is HARD REAL-TIME (which significantly narrows down the posiible types of software options one can use). 
 I also chose to do this project in an open source manner because it allows others to rapidly prototype and collaborate on cool projects like agile humanoids, or other mission-critical systems.
 
