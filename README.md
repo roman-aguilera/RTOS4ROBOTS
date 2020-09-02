@@ -18,6 +18,7 @@ The goal of this is to collaborate and disseminate open-source solutions.
 # External Resources
 
 Here are a few links for other rescources:
+
 https://wiki.rdu.im/_pages/Resource/software.html
 https://wiki.rdu.im/_pages/Resource/online-course.html
 
