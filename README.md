@@ -1,5 +1,16 @@
 # RTOS4ROBOTS
-This repository is a compilation of rescources for learning how build end-to-end, hard real-time, control systems by integrating open source software tools. The emphasis here is HARD REAL-TIME (which significantly narrows down the posiible types of software options on can use). This file also includes step-by-step instructions for installing Xenomai 3. So far I have gotten to the point of compiling 
+This repository is part of a research project for learning how build end-to-end, hard real-time, control systems by integrating open source software tools. 
+The emphasis here is HARD REAL-TIME (which significantly narrows down the posiible types of software options one can use). 
+I also chose to do this project in an open source manner because it allows others to rapidly prototype and collaborate on cool projects like agile humanoids, or other mission-critical systems.
+
+
+This README.md file includes step-by-step instructions for installing Xenomai 3. If you find this walkthrough useful, please cute this repository :)
+So far, I have gotten to the point of successfully compiling a Xenomai3 dual kernel built on top of Linux version 4.4.71 to be used on x86 target hardware. 
+This was done using an x86-based laptop running on the Ubuntu 16.04 operating system.
+Currently, I am working on compiling a Xenomai3 kernel on Ubuntu 18.04 for target hardware that runs on an arm chip.
+I am currently investigating which mix of proceccors/chips, hardware, microcontrollers, System-on-Chip, and open-source software tools is best suited for building an agile humanoid robot from the ground up. 
+If you have any comments, suggestions on hardware, or would like to collaborate, please reach out to me at romanaguilera94@gmail.com, Twitter, or LinkedIn .
+
 
 Here are a few links for rescources
 https://wiki.rdu.im/_pages/Resource/software.html
@@ -9,8 +20,6 @@ Some other hard real-time operating systems:
 Open source
 http://rtxi.org/docs/manual/
 https://www.rtai.org/
-
-
 
 Papers that have done this sort of work:
 
