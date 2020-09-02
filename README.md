@@ -9,11 +9,13 @@ This README.md file includes step-by-step instructions for installing Xenomai 3.
 So far, this status of this project is having a successfully compiled Xenomai3 dual (codename Cobalt) kernel built on top of Linux version 4.4.71 to be used on x86 target hardware. 
 This was done using an x86-based laptop running on the Ubuntu 16.04 operating system.
 
-A current project is compiling a Xenomai3 kernel on Ubuntu 18.04 for target hardware that runs on arm-based target hardware.
+Current efforts of this project includes building a Xenomai3 kernel to be deployed on arm-based target hardware. This is being done on an x86-based laptop that runs on the Ubuntu 18.04 operating system.
 I am currently investigating which mix of proceccors/chips, hardware, microcontrollers, System-on-Chip, and open-source software tools is best suited for building an agile humanoid robot from the ground up. 
 If you have any comments, suggestions on hardware, or would like to collaborate, please reach out to me at romanaguilera94@gmail.com, Twitter, or LinkedIn .
 If you have a functional and up-to-date hard real-time operating system set up, please reach out so that we can cite your work and build on top of your existing setup. 
 The goal of this is to collaborate and disseminate open-source solutions.
+
+# External Resources
 
 Here are a few links for other rescources:
 https://wiki.rdu.im/_pages/Resource/software.html
@@ -36,6 +38,7 @@ http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1078.5712&rep=rep1&type
 
 https://reader.elsevier.com/reader/sd/pii/S1474667015375868?token=2D0A083310F68B5A5A99EC3D667E86609F2E57E4B40DBBAB7F29D7082BAC2D91668F7D9660DAE7A39B79F597F9D8956A
 
+# Installing Xenomai3
 
 To get started with installing Xenomai on Ubuntu, follow these instuctions:
 
