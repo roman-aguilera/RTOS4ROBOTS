@@ -20,6 +20,7 @@ The goal of this is to collaborate and disseminate open-source solutions.
 
 
 Here are a few links for other rescources:
+https://xenomai.org/pipermail/xenomai/2020-September/043361.html
 
 https://gitlab.denx.de/Xenomai/xenomai/-/wikis/Configuring_For_X86_Based_Dual_Kernels#Optimized_CPU_and_platform_settings
 
