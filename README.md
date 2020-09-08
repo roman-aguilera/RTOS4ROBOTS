@@ -9,7 +9,11 @@ This README.md file includes step-by-step instructions for installing Xenomai 3,
 https://gitlab.denx.de/Xenomai/xenomai/-/wikis/home
 
 Some other resources might be more useful. 
+
+https://www.eng.yale.edu/grablab/openhand/
+
 https://github.com/intel/linux-stable-xenomai/wiki/Guide-of-Xenomai-co-kernel-Build-and-Installation-on-top-of-Ubuntu
+
 https://xenomai.org/pipermail/xenomai/2020-September/043361.html
 
 So far, this status of this project is having a successfully compiled Xenomai3 dual (codename Cobalt) kernel built on top of Linux version 4.4.71 to be used on x86 target hardware. 
