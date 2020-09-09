@@ -41,6 +41,9 @@ https://wiki.rdu.im/_pages/Resource/software.html
 
 https://wiki.rdu.im/_pages/Resource/online-course.html
 
+http://www.cs.ru.nl/lab/xenomai/exercises_xenomai2.4/ex01/Exercise-1.html
+
+https://www.ashwinnarayan.com/post/xenomai-realtime-programming/
 
 Some other open-source, hard real-time operating systems that are popular:
 
