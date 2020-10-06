@@ -66,7 +66,11 @@ https://core.ac.uk/download/pdf/41776734.pdf
 "Towards an Open-Source Integrated Development and Real-Time Control Platform for Robots"
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1078.5712&rep=rep1&type=pdf
 
+"A Platform for Real-Time Control Education with LEGO MINDSTORMS®"
 https://reader.elsevier.com/reader/sd/pii/S1474667015375868?token=2D0A083310F68B5A5A99EC3D667E86609F2E57E4B40DBBAB7F29D7082BAC2D91668F7D9660DAE7A39B79F597F9D8956A
+
+"Real-time control platform based on free software and USB communication"
+https://ieeexplore.ieee.org/document/7602544/citations?tabFilter=papers#citations
 
 # Installing Xenomai3
 
