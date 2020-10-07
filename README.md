@@ -72,6 +72,17 @@ https://reader.elsevier.com/reader/sd/pii/S1474667015375868?token=2D0A083310F68B
 "Real-time control platform based on free software and USB communication"
 https://ieeexplore.ieee.org/document/7602544/citations?tabFilter=papers#citations
 
+
+David Pearson's Work (uses beaglebone black):
+Pendulum + Beaglebone + Control Theory = Profit
+https://www.youtube.com/watch?v=_IEzcxh3kvQ&list=PLfRWKucR8EjqEjzcVqUJtcdtagDC75TiS&index=2
+An architecture for preemption-resistant control (Ph.D. Defense)
+https://www.youtube.com/watch?v=vWMsGxmyK_8
+"An architecture for preemption-resistant control (Ph.D. Defense)"
+https://web.ece.ucsb.edu/~hespanha/published/CDC17_0737_MS.pdf
+
+
+
 # Installing Xenomai3
 
 To get started with installing Xenomai on Ubuntu, follow these instuctions:
