@@ -1,7 +1,7 @@
 # RTOS4ROBOTS : Hard Real-Time Operating Systems for Robots
 This repository is part of a research project that aims to build end-to-end, hard real-time, control systems (namely agile humanoids) by integrating open-source software tools. 
 
-[comment]: <> (The emphasis here is har (which significantly narrows down the posiible types of software options one can use). This research project is done in an open-source manner because it allows others to freely and rapidly prototype mission-critical projects, such as agile humanoids (life size robots that can run on 2 legs). )
+<!--- (The emphasis here is har (which significantly narrows down the posiible types of software options one can use). This research project is done in an open-source manner because it allows others to freely and rapidly prototype mission-critical projects, such as agile humanoids (life size robots that can run on 2 legs). ) --->
 
 If you find this repository beneficial, we encourage you to cite it.
 
