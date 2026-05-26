@@ -4,6 +4,11 @@
 
 <!--- ![](Logo_xenial_xerus_xenomai3.png) --->
 
+# Operating System and Kernel Versions used for this Setup
+- Ubuntu 16 OS (Used to compile other 2 files into final Hard-Real Time Kernel)
+- Linux version 4.4.71
+- Xenomai 3 
+
 
 # Setup
 To get started on installation and setup right away:
