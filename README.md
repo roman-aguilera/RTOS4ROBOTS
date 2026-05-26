@@ -5,7 +5,7 @@
 <!--- ![](Logo_xenial_xerus_xenomai3.png) --->
 
 
-# Setup Tutorial
+# Setup
 To get started on installation and setup right away:
 https://github.com/roman-aguilera/RTOS4ROBOTS#installing-xenomai3
 
