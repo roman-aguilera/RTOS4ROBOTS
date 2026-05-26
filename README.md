@@ -7,7 +7,7 @@
 
 # Setup
 To get started on installation and setup right away:
-https://github.com/roman-aguilera/RTOS4ROBOTS#installing-xenomai3-on-top-of-linux-version-4471
+![Xenomai 3 Installation on top of Linux version 4.4.71][https://github.com/roman-aguilera/RTOS4ROBOTS#installing-xenomai3-on-top-of-linux-version-4471]
 
 # About
 This repository is part of a research project that aims to build end-to-end, hard real-time, control systems (namely agile humanoids) by integrating open-source software tools. 
