@@ -1,4 +1,4 @@
-# RTOS4ROBOTS : Hard Real-Time Operating Systems for Robots (Xenomai 3 Installation using Ubuntu 16 OS)
+# RTOS4ROBOTS : Hard Real-Time Operating Systems for Robots (Xenomai 3 Installation on top of Linux version 4.4.71, compiled using Ubuntu 16 OS)
 
 <!--- ![](Logo_xenial_xerus_xenomai3.png) --->
 
