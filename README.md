@@ -10,7 +10,7 @@ This repository is part of a research project that aims to build end-to-end, har
 # Operating System and Kernel Versions used for this Setup
 - Ubuntu 16 OS (Used to compile other 2 files into final Hard-Real Time Kernel)
 - Linux version 4.4.71
-- Xenomai 3 
+- Xenomai 3 dual (codename Cobalt)
 
 
 # Setup
