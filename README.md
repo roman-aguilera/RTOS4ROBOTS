@@ -1,6 +1,6 @@
 # RTOS4ROBOTS : Hard Real-Time Operating Systems for Robots
 
-![](Logo_xenial_xerus_xenomai3.png)
+<!--- ![](Logo_xenial_xerus_xenomai3.png) --->
 
 
 # Tutorial
