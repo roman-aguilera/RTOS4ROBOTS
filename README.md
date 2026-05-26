@@ -13,9 +13,9 @@ This repository is part of a research project that aims to build end-to-end, har
 <!--- (The emphasis here is har (which significantly narrows down the posiible types of software options one can use). This research project is done in an open-source manner because it allows others to freely and rapidly prototype mission-critical projects, such as agile humanoids (life size robots that can run on 2 legs). ) --->
 
 # Operating System and Kernel Versions used for this Setup
-- Ubuntu 16 OS (Used to compile other 2 files into final Hard-Real Time Kernel)
+- Ubuntu 16 OS on x86 (Used to compile other 2 files into final Hard-Real Time Kernel)
 - Linux version 4.4.71
-- Xenomai 3 dual (codename Cobalt)
+- Xenomai 3 dual (codename Cobalt) for x86
 
 
 # Setup
