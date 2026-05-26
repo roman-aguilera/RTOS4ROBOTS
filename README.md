@@ -1,8 +1,8 @@
 # RTOS4ROBOTS : 
-## Open Source
-## Hard Real-Time Operating System 
+### Open Source
+### Hard Real-Time Operating System 
 ### for
-## Robots 
+### Robots 
 
 <!--- ![](Logo_xenial_xerus_xenomai3.png) --->
 
