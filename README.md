@@ -1,4 +1,4 @@
-# RTOS4ROBOTS: 
+# RTOS4ROBOTS
 # Open Source Hard Real-Time Operating System for Robots 
 
 
