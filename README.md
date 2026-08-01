@@ -44,10 +44,12 @@ I am currently investigating which mix of proceccors/chips, hardware, microcontr
 
 # Literature Review
 A white-paper that I made for those wanting to get introduced to Real-Time Operating Systems.
+
 https://github.com/roman-aguilera/RTOS4ROBOTS/blob/master/CS_263___Runtime_Systems__Final_Project_Writeup_Roman_Aguilera.pdf
 
 # Slides
 Some slides that I made to present this project as well as visualize some real-time concepts.
+
 https://github.com/roman-aguilera/RTOS4ROBOTS/blob/master/Real%20Time%20Operating%20Systems%20-%20Slides.pdf
 
 # Collaborators
