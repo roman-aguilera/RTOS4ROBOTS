@@ -5,7 +5,7 @@
 <!--- ![](Logo_xenial_xerus_xenomai3.png) --->
 
 # About
-This repository is part of a research project that aims to build end-to-end, hard real-time, control systems (namely agile humanoids) by integrating open-source software tools. 
+This repository is part of a research project that aims to build end-to-end, hard real-time, control systems (namely agile humanoids) by integrating open-source software tools. If you find this repository beneficial, I encourage you to cite it.
 
 <!--- (The emphasis here is har (which significantly narrows down the posiible types of software options one can use). This research project is done in an open-source manner because it allows others to freely and rapidly prototype mission-critical projects, such as agile humanoids (life size robots that can run on 2 legs). ) --->
 
@@ -22,7 +22,6 @@ To get started on installation and setup right away:
 
 
 # Notes
-If you find this repository beneficial, we encourage you to cite it.
 
 This README.md file includes step-by-step instructions for installing Xenomai 3, up to the compiling stage. 
 https://gitlab.denx.de/Xenomai/xenomai/-/wikis/home
@@ -60,7 +59,6 @@ The goal of this is to collaborate and disseminate open-source solutions.
 If you have any comments, suggestions on hardware, or would like to collaborate, please reach out to me at roman.aguilera.arevalo@gmail.com, message me on LinkedIn (https://www.linkedin.com/in/romanaguilera), or book an appointment on my personal website (https://roman-aguilera.github.io/) .
 
 # External Resources
-
 
 Here are a few links for other rescources:
 
