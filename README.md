@@ -47,7 +47,7 @@ If you have a functional and up-to-date hard real-time operating system set up, 
 The goal of this is to collaborate and disseminate open-source solutions.
 
 # Contact 
-If you have any comments, suggestions on hardware, or would like to collaborate, please reach out to me at roman.aguilera.arevalo@gmail.com, or LinkedIn.
+If you have any comments, suggestions on hardware, or would like to collaborate, please reach out to me at roman.aguilera.arevalo@gmail.com, booking an appointment on my personal website (https://roman-aguilera.github.io/) , or messaging me on LinkedIn (https://www.linkedin.com/in/romanaguilera).
 
 # External Resources
 
