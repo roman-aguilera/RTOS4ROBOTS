@@ -89,30 +89,46 @@ http://rtxi.org/docs/manual/
 https://www.rtai.org/
 
 
+
 Papers that have done this sort of work:
 
 "Building XenoBuntuLinux Distribution for Teaching and Prototyping Real-Time Operating Systems" (uses Xenomai 2)
+
 https://arxiv.org/pdf/1103.2336.pdf
 
+
 "Laboratorio de Practicas para la Ensenanzade Sistemas de Control de Tiempo Real" ("Laboratory of Practices for the Teaching of Real Time Control Systems")
+
 https://core.ac.uk/download/pdf/41776734.pdf
 
+
 "Towards an Open-Source Integrated Development and Real-Time Control Platform for Robots"
+
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1078.5712&rep=rep1&type=pdf
 
+
 "A Platform for Real-Time Control Education with LEGO MINDSTORMS®"
+
 https://reader.elsevier.com/reader/sd/pii/S1474667015375868?token=2D0A083310F68B5A5A99EC3D667E86609F2E57E4B40DBBAB7F29D7082BAC2D91668F7D9660DAE7A39B79F597F9D8956A
 
+
 "Real-time control platform based on free software and USB communication"
+
 https://ieeexplore.ieee.org/document/7602544/citations?tabFilter=papers#citations
 
 
-David Pearson's Work (uses beaglebone black):
+David Pearson's Work (uses Beaglebone Black):
+
 Pendulum + Beaglebone + Control Theory = Profit
+
 https://www.youtube.com/watch?v=_IEzcxh3kvQ&list=PLfRWKucR8EjqEjzcVqUJtcdtagDC75TiS&index=2
+
 An architecture for preemption-resistant control (Ph.D. Defense)
+
 https://www.youtube.com/watch?v=vWMsGxmyK_8
+
 "An architecture for preemption-resistant control (Ph.D. Defense)"
+
 https://web.ece.ucsb.edu/~hespanha/published/CDC17_0737_MS.pdf
 
 
