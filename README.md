@@ -60,7 +60,7 @@ The goal of this is to collaborate and disseminate open-source solutions.
 # Contact 
 If you have any comments, suggestions on hardware, or would like to collaborate, please reach out to me at roman.aguilera.arevalo@gmail.com, message me on LinkedIn (https://www.linkedin.com/in/romanaguilera), or book an appointment on my personal website (https://roman-aguilera.github.io/) .
 
-# External Resources
+# External Resources (Links)
 
 Here are a few links for other rescources:
 
@@ -90,7 +90,7 @@ https://www.rtai.org/
 
 
 
-Papers that have done this sort of work:
+# External Resources (Papers that have done this sort of work):
 
 "Building XenoBuntuLinux Distribution for Teaching and Prototyping Real-Time Operating Systems" (uses Xenomai 2)
 
