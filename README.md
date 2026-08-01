@@ -42,6 +42,14 @@ This was done using an x86-based laptop running on the Ubuntu 16.04 operating sy
 Current efforts of this project includes building a Xenomai3 kernel to be deployed on arm-based target hardware. This is being done on an x86-based laptop that runs on the Ubuntu 18.04 operating system.
 I am currently investigating which mix of proceccors/chips, hardware, microcontrollers, System-on-Chip, and open-source software tools is best suited for building an agile humanoid robot from the ground up. 
 
+# Literature Review
+A white-paper that I made for those wanting to get introduced to Real-Time Operating Systems.
+https://github.com/roman-aguilera/RTOS4ROBOTS/blob/master/CS_263___Runtime_Systems__Final_Project_Writeup_Roman_Aguilera.pdf
+
+# Slides
+Some slides that I made to present this project as well as visualize some real-time concepts.
+https://github.com/roman-aguilera/RTOS4ROBOTS/blob/master/Real%20Time%20Operating%20Systems%20-%20Slides.pdf
+
 # Collaborators
 If you have a functional and up-to-date hard real-time operating system set up, please reach out so that we can cite your work and build on top of your existing setup. 
 The goal of this is to collaborate and disseminate open-source solutions.
